@@ -10,7 +10,7 @@
 #define RIGHTMID 1
 #define RIGHTREAR 2
 
-
+#define FORK 5
 
 #define LIFT 18
 

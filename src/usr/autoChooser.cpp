@@ -12,6 +12,11 @@ static const char *btnm_map[] = {"R_Both", "L_Both", "R_Neuts", "L_Neuts", "\n",
 								 "DriverSkills", "ProgSkills", ""};
 static const char *auton_strings[] = {"R.Both", "L.Both", "R.Neuts", "L.Neuts", "AWP", "R.Rsh", "L.Rsh", "R.MidRush", "DrivSkills", "ProgSkills"};
 
+
+
+
+
+
 static lv_res_t btnm_action(lv_obj_t *btnm, const char *txt){
 	for (int i = 0; i < sizeof(auton_strings) / sizeof(auton_strings[0]); i++){
 		if (strcmp(auton_strings[i], txt) == 0){
@@ -22,6 +27,13 @@ static lv_res_t btnm_action(lv_obj_t *btnm, const char *txt){
 	}
 
 	return LV_RES_OK; /*Return OK because the button matrix is not deleted*/
+}
+
+
+void drawImage() {
+	lv_obj_t *img = lv_img_create(lv_scr_act(), NULL);
+	lv_img_set_src(img, "S:aditya_picture.jpg");
+
 }
 
 

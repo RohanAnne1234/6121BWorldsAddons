@@ -21,7 +21,7 @@ void intakeOpControl() {
     intake.move_velocity(0);
   }
 
-  if(isDriverIntake && driver_isLiftPast){
+  if(isDriverIntake){
       intake.move_velocity(OP_INTAKE_VEL);
   }
 

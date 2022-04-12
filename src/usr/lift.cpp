@@ -29,6 +29,8 @@ int lastSet = 0;
 
 
 
+
+
 void clamp(bool state){
     isLiftClamped = state;
 }
@@ -136,14 +138,6 @@ void liftTask(void *param){
     lift.tare_position();
 	while (true){
         liftPos = lift.get_position();
-
-        if(liftPos > driverLiftThresh){
-            driver_isLiftPast = true;
-        }
-        else{
-            driver_isLiftPast = false;
-        }
-
 
 
         if(liftMode == 0){
