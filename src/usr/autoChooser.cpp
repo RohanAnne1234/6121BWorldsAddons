@@ -32,7 +32,7 @@ static lv_res_t btnm_action(lv_obj_t *btnm, const char *txt){
 
 void drawImage() {
 	lv_obj_t *img = lv_img_create(lv_scr_act(), NULL);
-	lv_img_set_src(img, "S:AdityaRaj.png");
+	lv_img_set_src(img, "usd/AdityaRaj.png");
 
 }
 
