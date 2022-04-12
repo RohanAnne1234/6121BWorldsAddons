@@ -121,7 +121,7 @@ void autonomous() {
  * task, not resume it from where it left off.
  */
 void opcontrol() {
-	pros::lcd::initialize();
+	//pros::lcd::initialize();
 	while (true) {
 
 		if(master.get_digital(DIGITAL_RIGHT)){

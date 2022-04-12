@@ -1019,7 +1019,7 @@ void printStats(){
     pros::lcd::print(4, "leftInt: %d, rightInt: %d\n", leftIntegral, rightIntegral);
     pros::lcd::print(5, "depth: %d, slantInt: %d\n", depth, (int)slantDiff);
     pros::lcd::print(6, "heading: %f, pitch: %f\n", getHeading(), getPitch());
-    pros::lcd::print(7, "brightness: %d", opticalSensor.get_brightness());
+    //pros::lcd::print(7, "brightness: %d", opticalSensor.get_brightness());
     // pros::lcd::print(6, "{head: %d, pitch: %d, yaw: %d\n", (int)imu.get_heading(), (int)imu.get_pitch(), (int)imu.get_yaw());
     //
     // pros::lcd::print(7, "rot: %f\n", (float)imu.get_rotation());
@@ -1050,6 +1050,7 @@ void chassisTask(void* parameter){
         // if(!pros::competition::is_autonomous()){
         //     chassisArcade();
         // }
+
         if(chassisMode == 0){
 
             if(master.get_digital(DIGITAL_LEFT) && !lockButtPress){
@@ -1083,7 +1084,8 @@ void chassisTask(void* parameter){
 
 
 
-            printStats();
+            //printStats();
+            drawImage();
             //printStats();
         }
 
